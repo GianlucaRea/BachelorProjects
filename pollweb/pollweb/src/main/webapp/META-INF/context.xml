@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/">
+    <!-- attenzione: questo esempio usa il connector/J 8: il nome del driver è diverso per evitare conflitti col driver della versione precedente -->
+    <!-- warning: this example uses the connector/J version 8: the driver name is different from version 5 to avoid conflicts -->
+
+    <!-- specificare la timezone del server, nella connection string o nella configurazione dello stesso, è essenziale col connector/J 8 -->
+    <!-- specifying the server timezone, in the connection string o the server configuration is required with connector/J 8 -->
+
+    <Resource auth="Container"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              maxActive="10"
+              maxIdle="5"
+              maxWait="10000"
+              name="jdbc/pollweb"
+              password="root"
+              username="root"
+              type="javax.sql.DataSource"
+              url="jdbc:mysql://localhost:3306/pollweb?serverTimezone=UTC"
+             />
+</Context>
