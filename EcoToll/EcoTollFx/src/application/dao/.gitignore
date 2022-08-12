@@ -1,0 +1,16 @@
+/autostrada.class
+/autostradaDAO.class
+/MySqlAutostrada.class
+/DAOFactory.class
+/OracleDAOFactory.class
+/MySQLDAOFactory.class
+/Casello.class
+/veicoloDAO.class
+/CaselloDAO.class
+/caselloDAO.class
+/percorsoDAO.class
+/MySqlCasello.class
+/MySqlVeicolo.class
+/MySqlPercorso.class
+/loginDAO.class
+/MySqlLogin.class

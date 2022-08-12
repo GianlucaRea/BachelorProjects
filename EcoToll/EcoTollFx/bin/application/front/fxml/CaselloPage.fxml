@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #607ce0;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="CaselloPageController">
+   <children>
+      <Text layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Impostazioni Casello">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <SplitPane dividerPositions="0.3020257826887661" layoutY="55.0" orientation="VERTICAL" prefHeight="545.0" prefWidth="800.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="155.0" prefWidth="798.0" style="-fx-background-color: #97ea8e;">
+               <children>
+                  <Text layoutX="327.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inserimento" wrappingWidth="144.13671875">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="newToolboothNameInsert" layoutX="92.0" layoutY="77.0" onMouseClicked="#writeNewInsertName" promptText="Es L'Aquila Ovest" />
+                  <TextField fx:id="newKilometroInsert" layoutX="325.0" layoutY="77.0" onMouseClicked="#InsertnewKilometroInsert" promptText="Kilometro" />
+                  <ChoiceBox fx:id="selectMotorwayofInsert" layoutX="562.0" layoutY="77.0" onMouseClicked="#SelectMotorwayInsert" prefWidth="150.0" />
+                  <Text layoutX="600.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autostrada">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="375.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altezza">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="143.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casello">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="InsertButtonToolbooth" layoutX="371.0" layoutY="122.0" mnemonicParsing="false" text="Inserisci" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="211.0" prefWidth="647.0">
+               <children>
+                  <SplitPane dividerPositions="0.39210526315789473" layoutY="-1.0" orientation="VERTICAL" prefHeight="382.0" prefWidth="800.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="188.0" prefWidth="798.0" style="-fx-background-color: #97ea8e;">
+                           <children>
+                              <Text layoutX="327.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eliminazione">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="137.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casello" wrappingWidth="52.0">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <ChoiceBox layoutX="88.0" layoutY="73.0" prefWidth="150.0" />
+                              <Button layoutX="606.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Elimina" />
+                           </children></AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="181.0" prefWidth="798.0" style="-fx-background-color: #97ea8e;">
+                           <children>
+                              <Pane layoutY="-1.0" prefHeight="228.0" prefWidth="266.0" style="-fx-background-color: #97ea8e;">
+                                 <children>
+                                    <TextField layoutX="59.0" layoutY="136.0" />
+                                    <Text layoutX="89.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuovo Nome">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Button layoutX="87.0" layoutY="171.0" mnemonicParsing="false" text="Cambia Nome" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="266.0" prefHeight="228.0" prefWidth="266.0" style="-fx-background-color: #97ea8e;">
+                                 <children>
+                                    <Text layoutX="77.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifica" wrappingWidth="112.2333984375">
+                                       <font>
+                                          <Font name="System Bold" size="24.0" />
+                                       </font>
+                                    </Text>
+                                    <ChoiceBox layoutX="58.0" layoutY="75.0" prefWidth="150.0" />
+                                    <Text layoutX="109.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casello" wrappingWidth="47.7900390625">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField layoutX="58.0" layoutY="133.0" />
+                                    <Text layoutX="74.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nuovo Kilometro" wrappingWidth="118.2333984375">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Button layoutX="73.0" layoutY="174.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Cambia Kilometro" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="532.0" prefHeight="228.0" prefWidth="266.0" style="-fx-background-color: #97ea8e;">
+                                 <children>
+                                    <Text layoutX="70.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cambia Autostrada">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <ChoiceBox layoutX="58.0" layoutY="133.0" prefWidth="150.0" />
+                                    <Button layoutX="74.0" layoutY="174.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Cambia Autostrada" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Button layoutX="734.0" layoutY="18.0" mnemonicParsing="false" text="Indietro" />
+   </children>
+</AnchorPane>

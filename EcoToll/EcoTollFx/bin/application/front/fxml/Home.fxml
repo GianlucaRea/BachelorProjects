@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #607ce0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.front.controller.HomeController"> 
+	<children>
+      <SplitPane dividerPositions="0.3508771929824561" prefHeight="600.0" prefWidth="800.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #607ce0;">
+               <children>
+                  <Label layoutX="99.0" layoutY="55.0" prefHeight="35.0" prefWidth="82.0" text="Admin">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernamefield" layoutX="24.0" layoutY="123.0" prefHeight="25.0" prefWidth="229.0" promptText="Username" />
+                  <Button fx:id="loginButton" layoutX="83.0" layoutY="230.0" mnemonicParsing="false" onMouseClicked="#loginAdmin" prefHeight="25.0" prefWidth="102.0" text="Login" />
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="59.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/icona.png" />
+                     </image>
+                  </ImageView>
+                  <PasswordField fx:id="passwordField" layoutX="24.0" layoutY="166.0" prefHeight="25.0" prefWidth="229.0" promptText="Password" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #97ea8e;">
+               <children>
+                  <Label layoutX="156.0" layoutY="41.0" prefHeight="56.0" prefWidth="207.0" text="Calcolo Pedaggio" textAlignment="CENTER" textOverrun="CLIP">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="113.0" layoutY="311.0" prefHeight="20.0" prefWidth="102.0" text="Targa">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="showEntryTollbooth" layoutX="89.0" layoutY="399.0" onMouseClicked="#selectEntryTollbooth" prefWidth="150.0" />
+                  <ChoiceBox fx:id="showExitToolbooth" layoutX="278.0" layoutY="399.0" onMouseClicked="#selectExitToolbooth" prefWidth="150.0" />
+                  <Label layoutX="244.0" layoutY="459.0" />
+                  <Label layoutX="308.0" layoutY="379.0" text="Casello Uscita">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="109.0" layoutY="379.0" prefHeight="20.0" prefWidth="110.0" text="Casello Entrata">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="calculusButton" layoutX="230.0" layoutY="455.0" mnemonicParsing="false" onMouseClicked="#doCalculus" text="Calcola" />
+                  <TextField fx:id="result" layoutX="188.0" layoutY="517.0" onAction="#returnResult" prefHeight="25.0" prefWidth="139.0" />
+                  <Label layoutX="226.0" layoutY="497.0" prefHeight="20.0" prefWidth="67.0" text="Pedaggio">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="189.0" fitWidth="237.0" layoutX="159.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/MotorWay.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="licensePlate" alignment="CENTER" layoutX="95.0" layoutY="331.0" onMouseClicked="#enterLicensePlate" prefHeight="25.0" prefWidth="139.0" promptText="ES.   BF146ZM" />
+                  <ChoiceBox fx:id="showMotorwayPay" layoutX="279.0" layoutY="331.0" onMouseClicked="#selectAutostradaPedaggio" prefWidth="150.0" />
+                  <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="302.0" layoutY="311.0" prefHeight="20.0" prefWidth="102.0" text="Autostrada">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
